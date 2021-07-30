@@ -1,0 +1,88 @@
+html {
+    background-color: #2196f3;
+    min-height: 1000px;
+    font-family: "helvetica neue";
+    background: url(fondo.png), #2196f3;
+    background: url(fondo.png),
+      -webkit-gradient(linear, right top, left top, from(#2196f3), to(#009688));
+    background: url(fondo.png),
+      linear-gradient(to left, #2196f3, #009688);
+  }
+
+.titulo{
+    color: #f72585;
+    text-align: center;
+}
+
+.centrar{
+    text-align: center;
+    
+}
+.limpiarEstilos::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.boton{
+    background-color: white;
+    border: 2px solid #457b9d;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+.boton:hover{
+    background-color: #457b9d;
+    border: 2px solid white;
+}
+
+
+table{
+    width: 100%;/*Para cubrir el 100% del espacio de la pagina*/
+}
+table, th, td{
+
+    border: 1px solid black;
+    border-collapse: collapse; /* Para que nuestro borde se colapse (manera comun de hacer tablas)*/
+    /*border-spacing: 5px; /*tamaño del borde*/
+    padding: 5px;
+   
+}
+
+th{
+    color: #f1faee;
+    background-color: #1d3557;
+}
+
+tr:nth-child(even){/*Renglones pares (even)*/
+    background-color: #f1faee;
+}
+tr:nth-child(odd){/*Renglones impares (odd)*/
+    background-color: #a8dadc;
+
+}
+
+.formulario{
+    display: none;
+}
+.formulario_active{
+    display: inline-block;
+}
+
+.caja{
+    margin: 10px;
+    color: black;
+    background-color: greenyellow;
+    border: 2px solid green;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.texto{
+    width: 30%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    margin: 1%;
+}
+
